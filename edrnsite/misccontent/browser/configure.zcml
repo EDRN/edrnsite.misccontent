@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+Copyright 2009 California Institute of Technology. ALL RIGHTS
+RESERVED. U.S. Government Sponsorship acknowledged.
+-->
+<configure xmlns='http://namespaces.zope.org'
+    xmlns:browser='http://namespaces.zope.org/browser'
+    i18n_domain='edrnsite.misccontent'>
+    <include package='plone.app.contentmenu'/>
+    
+    <!-- EDRN Home -->
+    <browser:resource name='edrn-home.gif' file='images/edrn-home.gif'/>
+    <browser:page
+        class='.views.EDRNHomeView'
+        for='..interfaces.IEDRNHome'
+        name='view'
+        permission='zope2.View'
+    />
+    <browser:menuItem
+        action='@@view'
+        description='Default representation of an EDRN Home.'
+        for='..interfaces.IEDRNHome'
+        menu='plone_displayviews'
+        title='EDRN Home view'
+    />
+</configure>

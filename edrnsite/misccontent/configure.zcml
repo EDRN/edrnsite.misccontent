@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+Copyright 2009 California Institute of Technology. ALL RIGHTS
+RESERVED. U.S. Government Sponsorship acknowledged.
+-->
+<configure
+    xmlns='http://namespaces.zope.org/zope'
+    xmlns:five='http://namespaces.zope.org/five'
+    xmlns:genericsetup='http://namespaces.zope.org/genericsetup'
+    i18n_domain='edrnsite.misccontent'>
+
+    <five:registerPackage package="." initialize=".initialize" />
+    <include package='.browser'/>
+    <include package='.content'/>
+    <genericsetup:registerProfile 
+        name='default'
+        title='EDRN Miscellaneous Content'
+        directory='profiles/default'
+        description='Miscellaneous content types for the Early Detection Research Network.'
+        provides='Products.GenericSetup.interfaces.EXTENSION'
+    />
+</configure>
