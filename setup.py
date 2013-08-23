@@ -9,7 +9,7 @@ import os.path
 # ------------
 
 _name        = 'edrnsite.misccontent'
-_version     = '1.0.4'
+_version     = '1.0.5'
 _description = 'EDRN Miscellaneous Content Types'
 _url         = 'http://cancer.jpl.nasa.gov/products/edrnsite-misccontent'
 _downloadURL = 'http://oodt.jpl.nasa.gov/dist/edrnsite'
