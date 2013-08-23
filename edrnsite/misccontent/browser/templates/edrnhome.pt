@@ -28,10 +28,6 @@
                 Body text
             </metal:field>
 
-            <div metal:use-macro="here/document_relateditems/macros/relatedItems">
-                show related items if they exist
-            </div>
-
 	        <br class="visual-clear"/>
 	        <div tal:replace="structure provider:plone.abovecontentbody" />
 	        <p tal:condition="python: not text and is_editable" i18n:translate="no_body_text" class="discreet">
