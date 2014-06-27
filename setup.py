@@ -9,7 +9,7 @@ import os.path
 # ------------
 
 _name        = 'edrnsite.misccontent'
-_version     = '1.0.5'
+_version     = '1.0.6'
 _description = 'EDRN Miscellaneous Content Types'
 _author      = 'Sean Kelly'
 _authorEmail = 'sean.kelly@jpl.nasa.gov'
