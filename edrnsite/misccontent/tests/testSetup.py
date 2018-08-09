@@ -5,7 +5,7 @@
 '''EDRN Miscellaneous Content: test the setup of this package.
 '''
 
-import unittest2 as unittest
+import unittest
 from edrnsite.misccontent.testing import EDRNSITE_MISC_CONTENT_INTEGRATION_TESTING
 
 class SetupTest(unittest.TestCase):
